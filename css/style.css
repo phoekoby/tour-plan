@@ -526,11 +526,18 @@ template {
   margin-top: 4px;
 }
 
+.hotel-info__name {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.hotel-info__description {
+  margin: 0;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
-  margin-top: 4px;
-  margin-bottom: 0;
 }
 
 .hotel-wrapper {
@@ -585,12 +592,20 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    width: 92%;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 920px) {
+  .navbar__search {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
   .container {
     max-width: 700px;
+    width: 92%;
   }
   .logo {
     width: 132px;
@@ -600,22 +615,24 @@ template {
     padding-bottom: 30px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 19px;
+    padding-bottom: 23px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .search__input {
     width: 340px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 690px) {
   .container {
     max-width: 700px;
     width: 92%;
@@ -624,7 +641,7 @@ template {
     display: none;
   }
   .navbar-top {
-    padding-top: 28px;
+    padding-top: 23px;
     padding-bottom: 28px;
   }
   .menu-button {
@@ -653,11 +670,40 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__name {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 480px;
+    width: 92%;
   }
   .logo {
     width: 99px;
@@ -667,9 +713,11 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+    width: 92%;
   }
   .logo {
     width: 99px;
+    height: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */

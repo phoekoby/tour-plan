@@ -517,6 +517,10 @@ template {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;

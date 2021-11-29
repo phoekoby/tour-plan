@@ -4,6 +4,8 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .logo
+    width: 132px
   .navbar
     &-top
       padding-top: 30px
@@ -21,6 +23,26 @@
   .container 
     max-width: 700px
     width: 92%
-
+  .navbar
+    &__search, &-menu, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+@media (max-width: 576px) 
+  .logo
+    width: 99px   
 
 

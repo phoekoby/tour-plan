@@ -29,6 +29,9 @@
   .search
     &__input
       width: 340px
+  .rating
+    padding-top: 8px
+    margin-top: 8px
 @media (max-width: 690px)
   .container 
     max-width: 700px
@@ -55,14 +58,21 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .breadcrumb
+     &-list
+      padding: 23px 0px 13px 0px;
   .stars
     flex-basis: auto
   .hotel
+    padding-top: 8px
+    padding-bottom: 40px
     &-name
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
     &-info
+      &__offer
+        margin-left: 0px
       &__text
         width: 100%
       &__name
@@ -72,6 +82,8 @@
         display: none
       &__offer
         order: -1
+  .stars
+    margin-right: 17px
 @media (max-width: 576px) 
   .container
     max-width: 480px

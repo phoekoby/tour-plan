@@ -4,24 +4,22 @@
     width: 92%
   .hotel
     &-slider
-      max-width: 60%
-      margin-right: 20px
-  .swipper
-    max-width: 60%
-    height: 450px
-    &-slide
-      max-width: 60%
-      &__img
-        height: 100%
+      width: 66%
   .booking
     width: 100%
     margin-bottom: 20px
+    margin-left: 20px
   .map
     width: 100%
+    margin-left: 20px
 @media (max-width:920px)
   .navbar
     &__search
       margin-left: auto
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -51,6 +49,7 @@
     padding-bottom: 45px
     &-slider
       max-width: 700px
+      width: 100%
       height: 450px
       margin-bottom: 28px
       &__item
@@ -60,17 +59,35 @@
     &-right
       &-wrapper
         flex-direction: row
-  .booking
-    width: 340px
   .map
     width: 340px
+    margin-left: 0
   .booking
     padding: 29px 22px 26px 22px
+    width: 340px
+    margin-left: 0
+    margin-right: 20px
   .newsletter
-    padding: 98px 0 87px 0
+    padding: 90px 0 95px 0
     &-wrapper
       max-width: 700px
       width: 92%
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 37px
+      margin-bottom: 50px
+    &-slider
+      &__date
+        margin-bottom: 4px
+      &__profile
+        margin-bottom: 33px
+      &__button
+        top: 43%
+        &--prev
+          left: 0
+        &--next
+          right: 0
 @media (max-width: 690px)
   .container 
     max-width: 700px
@@ -135,14 +152,13 @@
     max-width: 100%
     &-slide
       max-width: 100%
-  
   .booking
     width: 100%
     margin-bottom: 20px
   .map
     width: 100%
   .newsletter
-    padding: 37px 0 85px 0
+    padding: 76px 0 85px 0
     &-wrapper
       display: flex
       flex-direction: column
@@ -160,12 +176,36 @@
   .subscribe
     width: 280px
     height: 55px
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after
+          display: none
+        &:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          margin-left: -94px
+          transform: translate(-50%,0)
+        &--next
+          right: 50%
+          margin-right: -87px
+          transform: translate(50%,0)
 @media (max-width: 576px) 
   .container
     max-width: 480px
     width: 92%
   .logo
     width: 99px   
+  .map
+    height: 173px
 @media (max-width: 320px) 
   .container
     max-width: 280px

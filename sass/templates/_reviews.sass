@@ -8,18 +8,20 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 70px
+    margin-top: 0
   &-slider
     &__item
       position: relative
       display: flex
       flex-direction: column
       align-items: center
-      width: 730px
+      max-width: 730px
       margin: 45px auto 0
       background-color: #fff
       border-radius: 8px
       margin-top: 45px
       padding: 0 62px 30px
+      max-height: 300px
       &:before
         content: ''
         position: absolute
@@ -40,7 +42,7 @@
         background-repeat: no-repeat 
     &__button
       position: absolute
-      top: 50%
+      top: 42%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -53,23 +55,23 @@
       z-index: 99
       &--prev
         background-image: url('../img/arrow-prev-secondary.svg')
-        left: 0
+        left: 17px
       &--next
        background-image: url('../img/arrow-next-secondary.svg')
-       right: 0
+       right: 17px
 
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 30px
+      margin-bottom: 33px
     &__avatar
       width: 90px
       height: 90px
       border-radius: 50%
       object-fit: cover
-      margin-bottom: 9px
+      margin-bottom: 10px
     &__username
       font-style: normal
       font-weight: bold
@@ -77,21 +79,28 @@
       line-height: 15px
       color: $primary-color
       margin-bottom: 10px
+      margin-top: 0
     &__date
       font-style: normal
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 4px
+      margin-bottom: 5px
     &__rating
       display: flex
       align-items: center
+    &__star
+      width: 8px
+      height: 8px
+      margin-right: 1px
+      &:last-child
+        margin-right: 0
     &__text
       max-width: 537px
       font-style: normal
       font-weight: normal
       font-size: 12px
-      line-height: 160%
+      line-height: 19.2px
       text-align: justify
       margin: 0
       margin: auto

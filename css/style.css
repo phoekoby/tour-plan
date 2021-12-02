@@ -985,7 +985,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 42%;
+  top: 44%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1194,7 +1194,7 @@ template {
     margin-bottom: 33px;
   }
   .reviews-slider__button {
-    top: 43%;
+    top: 50%;
   }
   .reviews-slider__button--prev {
     left: 0;

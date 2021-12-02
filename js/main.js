@@ -1,21 +1,32 @@
-var swiper = new Swiper('.swiper', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
 });
-swiper.on('mouseover mouseout', function() {
+var reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+});
+
+hotelSwiper.on('mouseover mouseout', function() {
   $(this).toggleClass('keydown');
 });
 $(document).keydown(function(e) {
     if (e.keyCode == '39') {
-      swiper.slideNext();
+      hotelSwiper.slideNext();
     } else if (e.keyCode == '37') {
-      swiper.slidePrev();
+      hotelSwiper.slidePrev();
     }
   
 });

@@ -2,9 +2,10 @@
   .container
     max-width: 960px
     width: 92%
-  .slider
-    max-width: 60%
-    margin-right: 20px
+  .hotel
+    &-slider
+      max-width: 60%
+      margin-right: 20px
   .swipper
     max-width: 60%
     height: 450px
@@ -18,9 +19,6 @@
   .map
     width: 100%
 @media (max-width:920px)
-  .slider
-    max-width: 60%
-    margin-right: 20px
   .navbar
     &__search
       margin-left: auto
@@ -49,10 +47,14 @@
   .rating
     padding-top: 8px
     margin-top: 8px
-  .slider 
-    max-width: 700px
-    max-height: 450px
   .hotel
+    padding-bottom: 45px
+    &-slider
+      max-width: 700px
+      height: 450px
+      margin-bottom: 28px
+      &__item
+        height: 100%
     &-grid
       flex-direction: column
     &-right
@@ -62,11 +64,13 @@
     width: 340px
   .map
     width: 340px
-  .slider
-    width: 100%
-    margin-bottom: 28px
   .booking
     padding: 29px 22px 26px 22px
+  .newsletter
+    padding: 98px 0 87px 0
+    &-wrapper
+      max-width: 700px
+      width: 92%
 @media (max-width: 690px)
   .container 
     max-width: 700px
@@ -105,6 +109,10 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
+    &-slider
+      max-width: 100%
+      margin-bottom: 20px
+      height: 350px
     &-info
       padding-bottom: 38px
       &__offer
@@ -118,25 +126,40 @@
         display: none
       &__offer
         order: -1
+    &-right
+      &-wrapper
+        flex-direction: column
   .stars
     margin-right: 17px
-  .slider 
-    max-width: 100%
-    margin-bottom: 20px
-    max-height: 350px
-  .swipper
+  .swiper
     max-width: 100%
     &-slide
       max-width: 100%
-  .hotel
-    &-right
-        &-wrapper
-          flex-direction: column
+  
   .booking
     width: 100%
     margin-bottom: 20px
   .map
     width: 100%
+  .newsletter
+    padding: 37px 0 85px 0
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: start
+      max-width: 700px
+      width: 87%
+    &-title
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 37px
+      &__strong
+        margin-top: 5px
+        font-size: 30px
+        line-height: 37px
+  .subscribe
+    width: 280px
+    height: 55px
 @media (max-width: 576px) 
   .container
     max-width: 480px
@@ -150,6 +173,7 @@
   .logo
     width: 99px
     height: 13px  
-  .slider 
-    max-height: 179px
+  .hotel
+    &-slider
+      height: 179px
 

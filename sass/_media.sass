@@ -12,6 +12,15 @@
   .map
     width: 100%
     margin-left: 20px
+  .activities
+    padding-bottom: 50px
+    &__title
+      margin-bottom: 55px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 48.5%
+    margin-bottom: 20px
 @media (max-width:920px)
   .navbar
     &__search
@@ -73,11 +82,13 @@
       max-width: 700px
       width: 92%
   .reviews
+    padding-bottom: 60px
     &__title
       font-size: 30px
       line-height: 37px
       margin-bottom: 50px
     &-slider
+      max-height: 345px
       &__date
         margin-bottom: 4px
       &__profile
@@ -177,13 +188,16 @@
     width: 280px
     height: 55px
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
     &-slider
+      max-height: 485px
       &__item
         padding: 0 30px 30px
+        max-height: 450px
         &:after
           display: none
         &:before
@@ -198,6 +212,21 @@
           right: 50%
           margin-right: -87px
           transform: translate(50%,0)
+  .activities
+    padding-bottom: 40px
+    padding-top: 40px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 100%
+    margin-bottom: 20px
+    &:nth-child(2)
+      margin-bottom: 28px
+      
 @media (max-width: 576px) 
   .container
     max-width: 480px
